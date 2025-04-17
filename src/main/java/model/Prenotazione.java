@@ -1,6 +1,6 @@
-package org.example;
+package model;
 
-import enums.StatoP;
+import model.enums.StatoP;
 
 public class Prenotazione {
     private String passeggeroN;

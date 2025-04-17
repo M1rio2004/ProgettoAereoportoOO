@@ -1,4 +1,4 @@
-package org.example;
+package model;
 
 public class UtenteAmministratore extends Utente {
     public void inserimentoVolo() {

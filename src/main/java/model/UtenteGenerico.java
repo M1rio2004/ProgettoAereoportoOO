@@ -1,4 +1,4 @@
-package org.example;
+package model;
 
 public class UtenteGenerico extends Utente {
     public void prenotaVolo() {
