@@ -25,7 +25,7 @@ public class UtenteGenerico extends Utente {
         //TODO
     }
 
-    //Metodo per cercare una prenotazione all'interno della lista
+    //Metodo per cercare una prenotazione all'interno della lista in base al "criterio" ovvero numeroBiglietto o nomePasseggero
     public Prenotazione cercaPrenotazione(String criterio) {
         for (Prenotazione p : prenotazioni) {
             if (p.getNumeroBiglietto().equals(criterio) || p.getNomePasseggero().equals(criterio)) {
