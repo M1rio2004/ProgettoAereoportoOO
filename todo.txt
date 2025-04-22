@@ -1,0 +1,30 @@
+Utente Generico
+Creare un metodo ModificaPrenotazione
+Revisionare il metodo prenotazione di un volo
+Revisionare Cerca Prenotazione
+Revisionare VisualizzaPrenotazioni
+
+
+Utente Amministratore
+Implementare un metodo per inserire i voli
+Implementare un metodo per aggiornare i voli
+Revisionare il metodo ModificaGate
+
+
+Prenotazione
+Implementare un metodo che gestisce lo stato prenotazione
+Revisionare il costruttore
+Revisionare Visualizzabiglietto
+
+
+Volo
+Revisionare il Costruttore
+
+
+VoloPartenzaDaNapoli
+Revisionare il Costruttore
+Revisionare il setGate
+
+
+VoloArrivoANapoli
+Revisionare Costruttore      
