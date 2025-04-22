@@ -1,14 +1,38 @@
 package model;
-
-import model.enums.StatoP;
+import model.enums.*;
 
 public class Prenotazione {
-    private String passeggeroN;
-    private String passeggeroC;
-    private String passeggeroCF;
-    private StatoP statoP;
     private String numeroBiglietto;
-    private int nPosto;
+    private String codiceFiscalePasseggero;
+    private String nomePasseggero;
+    private String cognomePasseggero;
+    private String numeroPosto;
+    // Stato attuale della prenotazione (confermata, in attesa, cancellata).
+    private StatoPrenotazione statoPrenotazione;
+    private Volo volo;
 
-    //TODO
+    //Costruttore
+    public Prenotazione(String numeroBiglietto, String codiceFiscalePasseggero, String nomePasseggero, String cognomePasseggero, String numeroPosto, StatoPrenotazione statoPrenotazione, Volo volo) {
+        this.numeroBiglietto = numeroBiglietto;
+        this.codiceFiscalePasseggero = codiceFiscalePasseggero;
+        this.nomePasseggero = nomePasseggero;
+        this.cognomePasseggero = cognomePasseggero;
+        this.numeroPosto = numeroPosto;
+        this.statoPrenotazione = statoPrenotazione;
+        this.volo = volo;
+    }
+
+    //Restituisce il numero del biglietto della prenotazione.
+    public String getNumeroBiglietto() {
+        return numeroBiglietto;
+    }
+
+    //Restituisce il nome del passeggero associato alla prenotazione.
+    public String getNomePasseggero() {
+        return nomePasseggero;
+    }
+
+    public String visualizzaBiglietto() {
+        return nomePasseggero + " " + cognomePasseggero + " - Biglietto: " + numeroBiglietto;
+    }
 }

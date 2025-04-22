@@ -1,25 +1,26 @@
 package model;
+import model.enums.*;
 
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.time.Duration;
-import java.util.ArrayList;
-import java.util.List;
-
-import model.enums.StatoV;
-
-public class Volo {
-    protected String codiceV;
+public abstract class Volo {
+    protected String codiceVolo;
     protected String compagniaAerea;
-    protected LocalDate dataVolo;
-    protected LocalTime orarioPrevisto;
-    protected Duration ritardo;
-    protected StatoV statoV;
+    protected String dataVolo;
+    protected String orarioPrevisto;
+    protected String ritardo;
+    //Stato corrente del volo (programmato, decollato, in ritardo, atterrato, cancellato).
+    protected StatoVolo stato;
 
-    protected List<Prenotazione> prenotazioni = new ArrayList<>();
-    protected Gate gate;
+    //Costruttore
+    public Volo(String codiceVolo, String compagniaAerea, String dataVolo, String orarioPrevisto, String ritardo, StatoVolo stato) {
+        this.codiceVolo = codiceVolo;
+        this.compagniaAerea = compagniaAerea;
+        this.dataVolo = dataVolo;
+        this.orarioPrevisto = orarioPrevisto;
+        this.ritardo = ritardo;
+        this.stato = stato;
+    }
 
-    public void aggiungiPrenotazione(Prenotazione p) {
-        prenotazioni.add(p);
+    public String getCodiceVolo() {
+        return codiceVolo;
     }
 }
