@@ -7,7 +7,7 @@ public class VoloPartenzaDaNapoli extends Volo {
     private Gate gate;
 
     //Costruttore
-    public VoloPartenzaDaNapoli(String codiceVolo, String compagniaAerea, java.time.LocalDate dataVolo, java.time.LocalTime orarioPrevisto, java.time.Duration ritardo, StatoVolo stato, String aeroportoDestinazione) {
+    public VoloPartenzaDaNapoli(String codiceVolo, String compagniaAerea, String dataVolo, String orarioPrevisto, String ritardo, StatoVolo stato, String aeroportoDestinazione) {
         super(codiceVolo, compagniaAerea, dataVolo, orarioPrevisto, ritardo, stato);
         this.aeroportoDestinazione = aeroportoDestinazione;
     }
