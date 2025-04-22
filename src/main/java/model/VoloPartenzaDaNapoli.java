@@ -1,4 +1,5 @@
 package model;
+import model.enums.*;
 
 public class VoloPartenzaDaNapoli extends Volo {
     private String aeroportoOrigine = "Napoli";

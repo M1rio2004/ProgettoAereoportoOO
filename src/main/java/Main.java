@@ -1,7 +1,7 @@
 package model;
 import model.enums.*;
 
-public class MainTest {
+public class Main {
     public static void main(String[] args) {
 
         // Creazione di un volo in partenza da Napoli, usando solo stringhe per data, orario e ritardo
