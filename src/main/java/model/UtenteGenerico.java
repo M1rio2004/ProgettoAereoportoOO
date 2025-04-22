@@ -21,8 +21,8 @@ public class UtenteGenerico extends Utente {
 
     //Metodo per simulare la modifica di una prenotazione esistente
     public void modificaPrenotazione(Prenotazione prenotazione) {
-        // Logica per modificare prenotazione (mock)
         System.out.println("Prenotazione modificata: " + prenotazione.getNumeroBiglietto());
+        //TODO
     }
 
     //Metodo per cercare una prenotazione all'interno della lista
