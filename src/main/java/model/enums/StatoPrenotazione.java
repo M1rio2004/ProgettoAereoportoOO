@@ -1,5 +1,5 @@
 package model.enums;
 
-public enum StatoP {
+public enum StatoPrenotazione {
     confermata, inAttesa, cancellata
 }

@@ -1,17 +1,14 @@
 package model;
 
 public class Gate {
-    private int nGate;
+    private int numeroGate;
 
-    public Gate(int nGate) {
-        this.nGate = nGate;
+    //Costruttore
+    public Gate(int numeroGate) {
+        this.numeroGate = numeroGate;
     }
 
-    public int getNGate() {
-        return nGate;
-    }
-
-    public void setNGate(int nGate) {
-        this.nGate = nGate;
+    public int getNumeroGate() {
+        return numeroGate;
     }
 }
